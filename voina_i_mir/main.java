@@ -1,7 +1,5 @@
 package voina_i_mir;
 
-import java.io.File;
-
 public class main {
     public static void main(String[] args) {
         TextAnalyzer test1 = new TextAnalyzer("Voina_i_mir.txt");

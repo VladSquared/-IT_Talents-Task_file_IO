@@ -1,5 +1,6 @@
 package voina_i_mir;
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -43,7 +44,7 @@ public class TextAnalyzer {
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
                 this.lineCounter++;
-                Pattern MY_PATTERN = Pattern.compile("[а-яА-Я]+|,");
+                Pattern MY_PATTERN = Pattern.compile("[а-яА-Яa-zA-Z]+|,");
                 Matcher m = MY_PATTERN.matcher(line);
                 while (m.find()) {
                     String word = m.group().toLowerCase();
