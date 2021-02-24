@@ -1,4 +1,4 @@
-package voina_i_mir;
+package voina_i_mir_text_analys;
 
 
 import java.io.File;
@@ -36,10 +36,8 @@ public class TextAnalyzer {
     }
 
     private void createWordMap() {
-        Scanner sc;
         String line;
-        try {
-            sc = new Scanner(file);
+        try(Scanner sc = new Scanner(file)) {
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
                 this.lineCounter++;
@@ -134,8 +132,7 @@ public class TextAnalyzer {
         dir.mkdir();
         for (int i = 1; i < wordsByLetters.size()+1; i++) {
             File wordsFile = new File("words/" + i + "_letter_words.txt");
-            try {
-                PrintStream ps = new PrintStream(wordsFile);
+            try(PrintStream ps = new PrintStream(wordsFile)) {
                 for (String word : wordsByLetters.get(i)) {
                     ps.println(word);
                 }

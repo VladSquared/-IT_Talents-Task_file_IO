@@ -1,6 +1,6 @@
-package voina_i_mir;
+package voina_i_mir_text_analys;
 
-public class main {
+public class DemoTextAnalyse {
     public static void main(String[] args) {
         TextAnalyzer test1 = new TextAnalyzer("Voina_i_mir.txt");
 
