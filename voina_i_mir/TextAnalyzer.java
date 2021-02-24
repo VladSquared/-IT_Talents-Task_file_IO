@@ -37,7 +37,6 @@ public class TextAnalyzer {
 
     private void createWordMap() {
         Scanner sc;
-        String pattern = "[а-яА-Я]+";
         String line;
         try {
             sc = new Scanner(file);
