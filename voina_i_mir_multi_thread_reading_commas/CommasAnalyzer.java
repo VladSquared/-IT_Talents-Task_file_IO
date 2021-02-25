@@ -2,10 +2,7 @@ package voina_i_mir_multi_thread_reading_commas;
 
 
 import java.io.*;
-import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class CommasAnalyzer {
     private int threads;
